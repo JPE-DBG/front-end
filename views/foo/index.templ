@@ -1,5 +1,11 @@
 package foo
 
+import (
+    "gothstarter/views/layouts"
+)
+
 templ Index() {
-    <div>hello from templ</div>
+    @layouts.Base(){
+        <div>hello from templ 2</div>
+    }
 }
