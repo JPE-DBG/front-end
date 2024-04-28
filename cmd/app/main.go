@@ -1,6 +1,7 @@
 package main
 
 import (
+	handlers "gothstarter/handlets"
 	"log"
 	"log/slog"
 	"net/http"
@@ -16,13 +17,9 @@ func main() {
 	}
 	router := chi.NewMux()
 
-	router.Get("/foo", handlerFoo)
+	router.Get("/foo", handlers.Make(handlers.HandlerFoo))
 
 	listnerAddr := os.Getenv("LISTEN_ADDR")
 	slog.Info("HTTP server started", "listnerAddr", listnerAddr)
 	http.ListenAndServe(listnerAddr, router)
-}
-
-func handlerFoo(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("foo"))
 }
