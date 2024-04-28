@@ -31,3 +31,17 @@ Add to project
 go get github.com/a-h/templ
 ```
 
+- get `air` for auto-reload
+    - https://github.com/cosmtrek/air
+```
+Install go 1.22 and higher
+go install github.com/cosmtrek/air@latest
+
+run with command
+air
+```
+
+To sync templ changes on top of air
+```
+templ generate --watch --proxy=http://localhost:3000
+```
