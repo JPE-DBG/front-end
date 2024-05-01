@@ -1,1 +1,0 @@
-<div class=\"flex justify-center items-center bg-gray-100\"><div class=\"text-3xl text-blue-500 font-bold\">hello world</div></div>

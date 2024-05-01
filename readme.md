@@ -97,3 +97,14 @@ Path `public/styles.css` must link to what is set in `base.templ`
 ```
     <link rel="stylesheet" href="/public/styles.css"/>
 ```
+
+### Opensources components
+
+#### Franken
+https://github.com/sveltecult/franken-ui
+
+Franken UI is an HTML-first, open-source library of UI components based on the utility-first Tailwind CSS with UIkit 3 compatibility. The design is based on shadcn/ui ported to be framework-agnostic.
+
+#### Alpine
+https://devdojo.com/pines/docs/how-to-use
+
