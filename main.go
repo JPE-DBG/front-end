@@ -19,6 +19,7 @@ func main() {
 
 	router.Handle("/*", public())
 	router.Get("/", handlers.Make(handlers.HandlerHome))
+	router.Get("/login", handlers.Make(handlers.HandleLoginIndex))
 
 	listnerAddr := os.Getenv("LISTEN_ADDR")
 	slog.Info("HTTP server started", "listnerAddr", listnerAddr)
